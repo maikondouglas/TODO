@@ -1,2 +1,16 @@
 @import 'bootstrap/scss/bootstrap';
 @import 'bootstrap-icons/font/bootstrap-icons';
+
+html, body {
+  height: 100%;
+}
+
+.bg {
+  background-image: url(bg.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+main {
+  opacity: 0.98;
+}
