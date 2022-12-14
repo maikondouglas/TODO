@@ -1,0 +1,20 @@
+<%= form_with(model: task) do |form| %>
+  <div>
+    <%= form.label :description, style: "display: block" %>
+    <%= form.text_field :description %>
+  </div>
+
+  <div>
+    <%= form.label :due_date, style: "display: block" %>
+    <%= form.date_field :due_date %>
+  </div>
+
+  <div>
+    <%= form.label :done, style: "display: block" %>
+    <%= form.check_box :done %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
