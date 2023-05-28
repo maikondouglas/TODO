@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 
 class TasksController < ApplicationController
+  include Exportable
+
   before_action :set_task, only: %i[show edit update destroy]
 
   def index
