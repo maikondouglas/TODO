@@ -1,4 +1,6 @@
 <%= form_with(model: task) do |form| %>
+  <%= form.hidden_field :parent_id, value: task.parent_id || params[:parent_id] %>
+
   <div class="mb-3">
     <%= form.label :description, style: "display: block", class: 'form-label' %>
     <%= form.text_field :description, class: 'form-control'  %>
